@@ -6,7 +6,7 @@ import telegram
 
 tokenTelegramBot = ''
 meuChatIdTelegram = ''
-bot=telegram.Bot(token=tokenTelegramBot)
+#bot=telegram.Bot(token=tokenTelegramBot)
 
 def get_project_root() -> Path:
     return Path(__file__).parent.parent

@@ -1,9 +1,8 @@
 EasyROI==1.0.3
 numpy==1.19.5
-opencv-python==4.5.5.62
+opencv-python==4.5.1.48
 python-telegram-bot==13.9
 PyAutoGUI==0.9.53
-numpy==1.19.5
 mss==6.1.0
 requests==2.25.1
 pyclick==0.0.2
