@@ -53,7 +53,7 @@ stageLoading = config[stageNames]['StageLoading']
 stageInventory = config[stageNames]['StageInventory']
 
 ##Images
-btnMetaMaskSign = config[imageMetamaskLanguage]['Sign']
+btnMetaMaskSign = metaMaskLanguage +"/"+ config[imageMetamaskLanguage]['Sign']
 
 
 

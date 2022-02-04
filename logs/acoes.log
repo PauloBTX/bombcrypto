@@ -229,3 +229,29 @@
 2022-02-04 18:47:03,959 :: Iniciando varredura. Quantidade de contas achadas: 1
 2022-02-04 18:47:03,960 :: Identificando posição no workFlow
 2022-02-04 18:47:04,229 :: Estamos na tela: Tela de Heróis
+2022-02-04 18:56:37,658 :: Iniciando varredura. Quantidade de contas achadas: 1
+2022-02-04 18:56:37,659 :: Identificando posição no workFlow
+2022-02-04 18:56:37,726 :: Estamos na tela: Login
+2022-02-04 18:56:37,779 :: Fazendo login no sistema...
+2022-02-04 18:56:44,646 :: Erro detectado.OpenCV(4.5.5) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\templmatch.cpp:1164: error: (-215:Assertion failed) (depth == CV_8U || depth == CV_32F) && type == _templ.type() && _img.dims() <= 2 in function 'cv::matchTemplate'
+ Atualizando a página.
+2022-02-04 18:56:46,449 :: Identificando posição no workFlow
+2022-02-04 18:56:46,549 :: Estamos na tela: Login
+2022-02-04 18:56:46,616 :: Fazendo login no sistema...
+2022-02-04 19:02:04,230 :: Iniciando varredura. Quantidade de contas achadas: 1
+2022-02-04 19:02:04,231 :: Identificando posição no workFlow
+2022-02-04 19:02:04,299 :: Estamos na tela: Login
+2022-02-04 19:02:04,351 :: Fazendo login no sistema...
+2022-02-04 19:02:11,238 :: Erro detectado.OpenCV(4.5.5) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\templmatch.cpp:1164: error: (-215:Assertion failed) (depth == CV_8U || depth == CV_32F) && type == _templ.type() && _img.dims() <= 2 in function 'cv::matchTemplate'
+ Atualizando a página.
+2022-02-04 19:02:13,013 :: Identificando posição no workFlow
+2022-02-04 19:02:13,103 :: Estamos na tela: Login
+2022-02-04 19:02:13,173 :: Fazendo login no sistema...
+2022-02-04 19:02:38,969 :: Iniciando varredura. Quantidade de contas achadas: 1
+2022-02-04 19:02:38,970 :: Identificando posição no workFlow
+2022-02-04 19:02:39,053 :: Estamos na tela: Login
+2022-02-04 19:02:39,118 :: Fazendo login no sistema...
+2022-02-04 19:03:25,269 :: Iniciando varredura. Quantidade de contas achadas: 1
+2022-02-04 19:03:25,270 :: Identificando posição no workFlow
+2022-02-04 19:03:25,350 :: Estamos na tela: Login
+2022-02-04 19:03:25,402 :: Fazendo login no sistema...
