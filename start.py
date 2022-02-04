@@ -256,7 +256,6 @@ def enableHeroesWithGreenBar(cropX,cropY,imgParam):
             if (len(result) == 0):
                 sleep(5)
                 attempts+=1
-    print(2)
     for x,y,w,h in result:
         try:
             #recortar quadrado herói
