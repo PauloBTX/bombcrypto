@@ -1,4 +1,3 @@
-Implementar arquivo de configuração
 Implementar linguas e pastas de imagens diferentes
 Aperfeiçoar status e habilitar envio de msg pelo telegram
 Trocar arquivos de logs para colocar datas no título

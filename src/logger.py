@@ -1,7 +1,13 @@
 from src.utils import get_project_root,sendMsgTelegram
+from colorama import init, Fore, Back, Style
 import logging
 import os
 
+#init do colorama
+#Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
+#Back: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET.
+#Style: DIM, NORMAL, BRIGHT, RESET_ALL
+init(autoreset=True)
 root = get_project_root()
 logFileName = str(root) + "/logs/acoes.log"
 if not os.path.exists(logFileName):
@@ -21,9 +27,9 @@ def writeLog(msg, tipo = 'info'):
         
     elif tipo == 'error':
         logger.error(msg)
-        print("ERROR: " + msg)
+        print(Back.RED + 'ERROR:' + Back.WHITE + Fore.MAGENTA + msg)
     else:
         logger.info(msg)
-        print(msg)
+        print(Back.BLUE + 'INFO:' + Back.WHITE + Fore.BLACK + msg)
     
     

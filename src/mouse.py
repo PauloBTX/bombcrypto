@@ -1,8 +1,18 @@
 from pyclick import HumanClicker
 import pyautogui
+import configparser
 
+
+
+#Início de configparser
+config = configparser.ConfigParser()
+config.read('config.ini',encoding='utf-8')
+
+#Início HumanClicker
 hc = HumanClicker()
 pyautogui.FAILSAFE = False
+
+mouseMoveTimeInSeconds = config['Settings'].getfloat('MouseMoveTimeInSeconds')
 
 def moveTo(x,y):
     # initialize HumanClicker object
@@ -10,7 +20,7 @@ def moveTo(x,y):
     y = int(y)
 
     # move the mouse to position (100,100) on the screen in approximately 2 seconds
-    hc.move((x,y),1)
+    hc.move((x,y),mouseMoveTimeInSeconds)
 
 def mouseClick():
     # mouse click(left button)
