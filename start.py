@@ -54,7 +54,7 @@ stageInventory = config[stageNames]['StageInventory']
 
 ##Images
 btnMetaMaskSign = metaMaskLanguage +"/"+ config[imageMetamaskLanguage]['Sign']
-
+btnChooseMetaMask = metaMaskLanguage + "/" + config[imageMetamaskLanguage]['SignWithMetaMask']
 
 
 ##Threshold
@@ -156,19 +156,24 @@ def countFoundImages(cropX,cropY,img):
 def loginApp(cropX,cropY):
     result = searchAndUniqueClick(cropX,cropY,"btn_connect_wallet.jpg")
     if (result):
-        sleep(5)
-        attempts = 0
-        while attempts < 20:
-            result = imageSearch(btnMetaMaskSign,"full",ignoreRescale=True)
-            if (len(result) > 0):
-                for x,y,w,h in result:
-                    center_x = x + int(w/2) 
-                    center_y = y + int(h/2) 
-                    moveTo(center_x,center_y)
-                    mouseClick()
-                break
-            sleep(0.5)
-            attempts+=1
+        sleep(2)
+        refreshPrint(cropX,cropY)
+        result = searchAndUniqueClick(
+            cropX, cropY, btnChooseMetaMask, ignoreRescale=True)
+        if (result):
+            sleep(5)
+            attempts = 0
+            while attempts < 20:
+                result = imageSearch(btnMetaMaskSign,"full",ignoreRescale=True)
+                if (len(result) > 0):
+                    for x,y,w,h in result:
+                        center_x = x + int(w/2) 
+                        center_y = y + int(h/2) 
+                        moveTo(center_x,center_y)
+                        mouseClick()
+                    break
+                sleep(0.5)
+                attempts+=1
         
 def countChests(cropX,cropY):
     sealedBlueChests= countFoundImages(cropX,cropY,"bau_azul_lacrado.jpg")
@@ -266,8 +271,8 @@ def enableHeroesWithGreenBar(cropX,cropY,imgParam):
             qbrY = y + height
             boxHero = imgCropped[y:qbrY, x:wResized]
             result2 = imageSearch(bombLanguage + "/" + str(scaleResize) + "/barra_verde.png","extra",boxHero,thresholdGreenBar,ignoreRescale=True)
-            #cv2.imshow("box",boxHero)
-            #cv2.waitKey()
+            cv2.imshow("box",boxHero)
+            cv2.waitKey()
             if(len(result2)>0):
                 print("Identificado. Colocando funcionário para trabalhar.")
                 searchAndUniqueClick(cropX+x, cropY+y,bombLanguage + "/" + str(scaleResize) + "/btn_work.png",boxHero,thresholdBtnWork,ignoreRescale=True)
