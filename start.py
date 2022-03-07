@@ -353,7 +353,7 @@ def workAllHeroes(cropX,cropY):
 
 def findStage(cropX,cropY):
     refreshPrint(cropX,cropY)
-    result = imageSearch("btn_connect_wallet.jpg",threshold=thresholdStageConnectWallet)
+    result = imageSearch("btn_connect.png",threshold=thresholdStageConnectWallet)
     if (len(result)>0):
         return stageLogin
     result = imageSearch("img_central_tesouro.jpg",threshold=thresholdStageStageMain)
