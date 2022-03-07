@@ -54,7 +54,7 @@ stageInventory = config[stageNames]['StageInventory']
 
 ##Images
 btnMetaMaskSign = metaMaskLanguage +"/"+ config[imageMetamaskLanguage]['Sign']
-btnChooseMetaMask = metaMaskLanguage + "/" + config[imageMetamaskLanguage]['SignWithMetaMask']
+btnChooseMetaMask = metaMaskLanguage + "/" + str(scaleResize) + "/" + config[imageMetamaskLanguage]['SignWithMetaMask']
 
 
 ##Threshold
