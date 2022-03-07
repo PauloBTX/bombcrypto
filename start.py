@@ -154,7 +154,7 @@ def countFoundImages(cropX,cropY,img):
     return len(result)
 
 def loginApp(cropX,cropY):
-    result = searchAndUniqueClick(cropX,cropY,"btn_connect_wallet.jpg")
+    result = searchAndUniqueClick(cropX,cropY,"btn_connect.png")
     if (result):
         sleep(2)
         refreshPrint(cropX,cropY)
