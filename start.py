@@ -271,8 +271,8 @@ def enableHeroesWithGreenBar(cropX,cropY,imgParam):
             qbrY = y + height
             boxHero = imgCropped[y:qbrY, x:wResized]
             result2 = imageSearch(bombLanguage + "/" + str(scaleResize) + "/barra_verde.png","extra",boxHero,thresholdGreenBar,ignoreRescale=True)
-            cv2.imshow("box",boxHero)
-            cv2.waitKey()
+            #cv2.imshow("box",boxHero)
+            #cv2.waitKey()
             if(len(result2)>0):
                 print("Identificado. Colocando funcionário para trabalhar.")
                 searchAndUniqueClick(cropX+x, cropY+y,bombLanguage + "/" + str(scaleResize) + "/btn_work.png",boxHero,thresholdBtnWork,ignoreRescale=True)
