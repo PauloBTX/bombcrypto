@@ -1,2 +1,2 @@
 # bombcrypto
-Esse é um bot em fase de desenvolvimento criado em Python com tecnologia OpenCV.
+Esse é um bot DESCONTINUADO criado em Python com tecnologia OpenCV.
